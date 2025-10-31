@@ -1,0 +1,160 @@
+*{
+    margin: 2px;
+    padding: 3px;
+    font-family:Tahoma, sans-serif;
+}
+#intro{
+    background-color:aqua;
+    height:210px;
+    text-align:left;
+    padding:30px;
+    width:100vw;
+}    
+#img{
+    border:1px solid red;
+    border-radius: 50%;
+}
+#navbar{
+    background-color: rgb(0, 0, 0) ;
+    margin:0;
+    text-align: center;
+    padding:2px;
+    display:flex;
+    justify-content: space-evenly;
+    position:fixed;
+    width:100vw;
+}
+#navbar a{
+    font-weight: lighter;
+    text-shadow: 2px,3px;
+    color: rgb(200, 196, 196);    
+    transition:background 0.5s;
+    transition:font-weight 0.5s;
+}
+#navbar a:hover{
+    font-weight:bolder;
+    background-color: rgb(54, 51, 51);
+}
+#about{
+    background-color: rgb(215, 204, 204);
+    height:180px;
+    width:100vw;
+}
+#skills{
+   background-color: blanchedalmond; 
+   font-family:Tahoma, sans-serif;
+   width:100vw;
+}
+#project{
+    background-color:rgb(248, 178, 155);
+    width:100vw;
+}
+#about, #project, #contact {
+  min-height: 30vh; 
+  padding: 40px;
+}
+.icon{
+    display:inline-block;
+    height:100px;
+    width:100px;
+}
+#achievements{
+    background-color: beige;
+    width:100vw;
+}
+#contact{
+    background-color: rgb(226, 226, 132);
+    width:100vw;
+}
+#img{
+    float:left;
+}
+.button{
+    height:30px;
+    width:200px;
+    background-color: rgb(176, 227, 99);
+    font-weight: 700;
+    color:darkgreen;
+
+}
+@media (max-width: 1024px) {
+  #skills img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .project img {
+    width: 80%;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  body {
+    padding: 10px;
+  }
+}
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .about, .projects, .contact {
+    padding: 10px;
+    text-align: center;
+  }
+
+  #skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  #skills img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .project {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  nav ul {
+    gap: 5px;
+  }
+
+  .icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .contact-info {
+    font-size: 0.8rem;
+  }
+}
